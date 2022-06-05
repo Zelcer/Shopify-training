@@ -1,0 +1,25 @@
+{
+  "layout": "theme.alternate",
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-product-alternate",
+      "settings": {
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations-alternate",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main",
+    "recommendations"
+  ]
+}

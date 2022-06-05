@@ -1,0 +1,143 @@
+<div class="main-footer__container container">
+  <div class="main-footer__top">
+    <dl class="main-footer__nav">
+      <div class="main-footer__item">
+        <dt class="main-footer__caption">About</dt>
+        <dd class="main-footer__info">
+          <address class="main-footer__text">
+            Susparsa Store
+            <br />
+            Geneva, Switzerland
+          </address>
+          <span id="listTitleSocial" class="v-h" aria-hidden="true">Social media</span>
+          <ul class="main-footer__socials socials" role="list" aria-labelledby="listTitleSocial">
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Facebook SUSPARSA">
+                <svg width="24" height="24" aria-hidden="true" focusable="false">
+                  <use xlink:href="#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Instagram SUSPARSA">
+                <svg width="24" height="24" aria-hidden="true" focusable="false">
+                  <use xlink:href="#instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </dd>
+      </div>
+      <div class="main-footer__item">
+        <dt class="main-footer__caption">Company</dt>
+        <dd class="main-footer__info">
+          <ul class="main-footer__menu" role="list">
+            <li class="main-footer__menu-item">
+              <a class="main-footer__link" href="#">Women</a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a class="main-footer__link" href="#">Men</a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a class="main-footer__link" href="#">Kids</a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a class="main-footer__link" href="#">About Us</a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a class="main-footer__link" href="#">Our Materials</a>
+            </li>
+          </ul>
+        </dd>
+      </div>
+      <div class="main-footer__item">
+        <dt class="main-footer__caption">Useful Links</dt>
+        <dd class="main-footer__info">
+          <ul class="main-footer__menu" role="list">
+            <li class="main-footer__menu-item">
+              <a class="main-footer__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a class="main-footer__link" href="#">Shipping Policy</a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a class="main-footer__link" href="#">Return & Refund Policy</a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a class="main-footer__link" href="#">Terms of Service</a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a class="main-footer__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </dd>
+      </div>
+    </dl>
+  </div>
+  <div class="main-footer__bottom">
+    <small class="main-footer__copyright">© Susparsa 2021</small>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Footer",
+	"tag": "footer",
+	"class": "main-footer",
+	"max_blocks": 4,
+	"blocks": [
+	  {
+	    "name": "About",
+		"type": "about",
+		"settings": [
+		  {
+            "type": "text",
+            "id": "footer_about_title",
+            "label": "Heading",
+            "default": "About"
+          },
+		  {
+			"type": "richtext",
+  			"id": "footer_about_text",
+  			"label": "About text"
+		  },
+		  {
+			"type": "text",
+  			"id": "footer_facebook",
+  			"label": "Facebook",
+  			"default": "Quick links"
+		  },
+		  {
+			"type": "text",
+  			"id": "footer_instagram",
+  			"label": "Instagram",
+  			"default": "Quick links"
+		  }
+		]
+	  },
+	  {
+		"name": "Menu",
+		"type": "menu",
+		"settings": [
+		  {
+            "type": "text",
+            "id": "footer_menu_title",
+            "label": "Heading",
+            "default": "Company"
+          },
+		  {
+			"type": "link_list",
+  			"id": "footer_menu",
+  			"label": "Menu"
+		  }
+		]
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
